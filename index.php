@@ -14,7 +14,7 @@
 <body>
     <section class="encabezado">
         <label>Asignatura</label>
-        <input type="text">
+        <input type="text">  
     </section>
 
 </body>
