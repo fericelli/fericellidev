@@ -1,6 +1,19 @@
-<table width="100%" align="center" border="0" cellpadding="0" cellspacing="1" id="tabla_resultado">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/manipulardatos.js"></script>
+  <title>Intercash</title>
+</head>
+<body>
+	<table width="100%" align="center" border="0" cellpadding="0" cellspacing="1" id="tabla_resultado">
 				<tbody><tr>
-					<td colspan="5" id="titulo_datos"><span id="texto_titulo_datos">Cursos del Plan de Estudio</span>: Ingeniería Informática V1</td>
+					<td colspan="5" class="titulo_datos"><span id="texto_titulo_datos">Cursos del Plan de Estudio</span>: Ingeniería Informática V1</td>
 				</tr>	
 
 				<tr>
@@ -11,7 +24,7 @@
 					<td width="15%" id="titulo_resultado" align="center">Prelación</td>
 				</tr>
 
-		<tr><td colspan="5" id="titulo_datos"><span id="texto_titulo_datos">Primer Semestre</span></td></tr>
+		<tr><td colspan="5" class="titulo_datos"><span id="texto_titulo_datos">Primer Semestre</span></td></tr>
 			<tr>
 				<td id="texto_resultado_2" align="center">II0112V1</td>
 				<td id="texto_resultado_2">Lógica</td>
@@ -75,7 +88,7 @@
 				<td id="texto_resultado_1" align="center">Si</td>
 				<td id="texto_resultado_1" align="center"></td><td>
 			</td></tr>
-				<tr><td colspan="5" id="titulo_datos"><span id="texto_titulo_datos">Segundo Semestre</span></td></tr>
+				<tr><td colspan="5" class="titulo_datos"><span id="texto_titulo_datos">Segundo Semestre</span></td></tr>
 			<tr>
 				<td id="texto_resultado_2" align="center">II0211V1</td>
 				<td id="texto_resultado_2">Educación para la Salud</td>
@@ -139,7 +152,7 @@
 				<td id="texto_resultado_1" align="center">Si</td>
 				<td id="texto_resultado_1" align="center"></td><td>
 			</td></tr>
-				<tr><td colspan="5" id="titulo_datos"><span id="texto_titulo_datos">Tercer Semestre</span></td></tr>
+				<tr><td colspan="5" class="titulo_datos"><span id="texto_titulo_datos">Tercer Semestre</span></td></tr>
 			<tr>
 				<td id="texto_resultado_2" align="center">II0313V1</td>
 				<td id="texto_resultado_2">Matemática Discreta</td>
@@ -195,7 +208,7 @@
 				<td id="texto_resultado_2" align="center">Si</td>
 				<td id="texto_resultado_2" align="center"><a href="javascript:void(0);" title="Inglés II">II0272</a><br></td><td>
 			</td></tr>
-				<tr><td colspan="5" id="titulo_datos"><span id="texto_titulo_datos">Cuarto Semestre</span></td></tr>
+				<tr><td colspan="5" class="titulo_datos"><span id="texto_titulo_datos">Cuarto Semestre</span></td></tr>
 			<tr>
 				<td id="texto_resultado_1" align="center">II0412V1</td>
 				<td id="texto_resultado_1">Lenguajes de Programación I</td>
@@ -251,7 +264,7 @@
 				<td id="texto_resultado_1" align="center">Si</td>
 				<td id="texto_resultado_1" align="center"></td><td>
 			</td></tr>
-				<tr><td colspan="5" id="titulo_datos"><span id="texto_titulo_datos">Quinto Semestre</span></td></tr>
+				<tr><td colspan="5" class="titulo_datos"><span id="texto_titulo_datos">Quinto Semestre</span></td></tr>
 			<tr>
 				<td id="texto_resultado_2" align="center">II0513</td>
 				<td id="texto_resultado_2">Administración de Empresas</td>
@@ -307,7 +320,7 @@
 				<td id="texto_resultado_2" align="center">Si</td>
 				<td id="texto_resultado_2" align="center"><a href="javascript:void(0);" title="Física II">II0453</a><br></td><td>
 			</td></tr>
-				<tr><td colspan="5" id="titulo_datos"><span id="texto_titulo_datos">Sexto  Semestre</span></td></tr>
+				<tr><td colspan="5" class="titulo_datos"><span id="texto_titulo_datos">Sexto  Semestre</span></td></tr>
 			<tr>
 				<td id="texto_resultado_1" align="center">II0613V1</td>
 				<td id="texto_resultado_1">Administración de Operaciones</td>
@@ -363,7 +376,7 @@
 				<td id="texto_resultado_1" align="center">Si</td>
 				<td id="texto_resultado_1" align="center"></td><td>
 			</td></tr>
-				<tr><td colspan="5" id="titulo_datos"><span id="texto_titulo_datos">Septimo Semestre</span></td></tr>
+				<tr><td colspan="5" class="titulo_datos"><span id="texto_titulo_datos">Septimo Semestre</span></td></tr>
 			<tr>
 				<td id="texto_resultado_2" align="center">II0713V1</td>
 				<td id="texto_resultado_2">Administración de Sistemas de Información</td>
@@ -411,7 +424,7 @@
 				<td id="texto_resultado_1" align="center">Si</td>
 				<td id="texto_resultado_1" align="center"><a href="javascript:void(0);" title="Lenguajes de Programación II">II0552V1</a><br><a href="javascript:void(0);" title="Diseño de Sistemas de Información">II0532V1</a><br></td><td>
 			</td></tr>
-				<tr><td colspan="5" id="titulo_datos"><span id="texto_titulo_datos">Octavo Semestre</span></td></tr>
+				<tr><td colspan="5" class="titulo_datos"><span id="texto_titulo_datos">Octavo Semestre</span></td></tr>
 			<tr>
 				<td id="texto_resultado_2" align="center">II0813V1</td>
 				<td id="texto_resultado_2">Auditoría de Sistemas</td>
@@ -459,7 +472,7 @@
 				<td id="texto_resultado_1" align="center">Si</td>
 				<td id="texto_resultado_1" align="center"></td><td>
 			</td></tr>
-				<tr><td colspan="5" id="titulo_datos"><span id="texto_titulo_datos">Noveno Semestre</span></td></tr>
+				<tr><td colspan="5" class="titulo_datos"><span id="texto_titulo_datos">Noveno Semestre</span></td></tr>
 			<tr>
 				<td id="texto_resultado_2" align="center">II0913</td>
 				<td id="texto_resultado_2">Sistemas Multimedia</td>
@@ -515,7 +528,7 @@
 				<td id="texto_resultado_2" align="center">Si</td>
 				<td id="texto_resultado_2" align="center"></td><td>
 			</td></tr>
-				<tr><td colspan="5" id="titulo_datos"><span id="texto_titulo_datos">Decimo Semestre</span></td></tr>
+				<tr><td colspan="5" class="titulo_datos"><span id="texto_titulo_datos">Decimo Semestre</span></td></tr>
 			<tr>
 				<td id="texto_resultado_1" align="center">II1012</td>
 				<td id="texto_resultado_1">Etica Profesional</td>
@@ -563,7 +576,7 @@
 				<td id="texto_resultado_2" align="center">Si</td>
 				<td id="texto_resultado_2" align="center"><a href="javascript:void(0);" title="Servicio Comunitario">SC0600</a><br><a href="javascript:void(0);" title="Seminario Trabajo de Grado">II0922</a><br></td><td>
 			</td></tr>
-				<tr><td colspan="5" id="titulo_datos"><span id="texto_titulo_datos">Asignaturas Complementarias</span></td></tr>
+				<tr><td colspan="5" class="titulo_datos"><span id="texto_titulo_datos">Asignaturas Complementarias</span></td></tr>
 			<tr>
 				<td id="texto_resultado_1" align="center">MEC001</td>
 				<td id="texto_resultado_1">Asignatura Complementaria 1</td>
@@ -588,4 +601,5 @@
 				<td id="texto_resultado_1" align="center"></td><td>
 			</td></tr>
 				</tbody></table>
-				<script src="js/manupulardatos.js"></script>
+			</body>
+</html>
