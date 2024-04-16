@@ -10,7 +10,7 @@
 			$this->Conexion->CerrarConexion();
 		}
 		private function retorno(){
-			$this->Conexion
+			$this->Conexion;
         }
 		private function dia($opcion){
 			switch ($opcion) {
