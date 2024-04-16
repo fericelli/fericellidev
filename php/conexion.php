@@ -7,7 +7,7 @@
 		private $Conectar;
 		
 		function __construct(?string $BaseDeDato = "u956446715_aulario"){
-			$this->Conexiones("auth-db585.hstgr.io","u956446715_root1","?7n7#FxK2",$BaseDeDato);
+			$this->Conexiones("https://fericellidev.com","u956446715_root1","?7n7#FxK2",$BaseDeDato);
 			
 		}
 		private function Conexiones($S,$U,$C,$B){
