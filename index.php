@@ -1,15 +1,3 @@
-<?php
-    $date = strtotime(date());
-
-    $first = strtotime('last Monday');
-    if(date('Y-m-d', $first)=="Sunday"){
-      
-      $last = date('Y-m-d');
-    }else{
-      $last = strtotime('last Sunday');
-    }
-    echo $date;
-?>
 
 <!DOCTYPE html>
 <html lang="en">
