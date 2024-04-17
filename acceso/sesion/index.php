@@ -76,7 +76,7 @@ error_reporting(E_ALL);
       
       
       <?php
-			$this->Conexion->CerrarConexion();
+			
 		}
   }
   new Index();
