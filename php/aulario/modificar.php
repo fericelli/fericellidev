@@ -10,7 +10,9 @@
 			$this->Conexion->CerrarConexion();
 		}
 		private function retorno(){
-			$this->Conexion;
+			
+			 return $this->Conexion->Consultar("UPDATE horarios SET profesor='".$_POST["profesor"]."',aula='".$_POST["aula"]."',dia='".$_POST["dia"]."',entrada='".$_POST["entrada"]."',salida='".$_POST["salida"]."' WHERE seccion='".$_POST["seccion"]."' AND materia='".$_POST["materia"]."'");
+
         }
 		private function dia($opcion){
 			switch ($opcion) {

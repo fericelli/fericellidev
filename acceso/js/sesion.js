@@ -55,7 +55,7 @@ $(document).on("ready",function(){
                             
                             html +=  "<p class='profesor'> Profesor  <input type='text' value='"+JSON.parse(data)[i][1]+"'></p>";
                             html +=  "<p class='aula'> Aula  <input type='text' value='"+JSON.parse(data)[i][3]+"'></p>";
-                            html +=  "<p class='dia'> Dia <label>Lunes</label><input type='radio' value='1'><label>Martes</label><input type='radio' value='2'><label>Miércoles</label><input type='radio' value='3'><label>Jueves</label><input type='radio' value='4'><label>Viernes</label><input type='radio' value='5'></p>";
+                            html +=  "<p class='dia'> Dia <label>Lunes</label><input type='radio' name='dia' value='1'><label>Martes</label><input type='radio' name='dia' value='2'><label>Miércoles</label><input type='radio' name='dia' value='3'><label>Jueves</label><input type='radio' name='dia' value='4'><label>Viernes</label><input type='radio' name='dia' value='5'></p>";
                             html +=  "<p class='entrada'>Entrada  <input type='time' value='"+JSON.parse(data)[i][4]+"'></p>";
                             html +=  "<p class='salida'>Salida  <input type='time' value='"+JSON.parse(data)[i][5]+"'></p>";
                             html +=  "<p materia='"+JSON.parse(data)[i][7]+"' seccion='"+JSON.parse(data)[i][2]+"' class='icono-guardar' style='cursor:pointer;font-size:25px'></p>";
@@ -98,30 +98,19 @@ function buscaraulario(){
         //console.log(JSON.parse(data));
         for(i=0;i<JSON.parse(data).length;i++){
             html +=  "<div class='aulario'>";
-                           
-            html +=  "<p> Materia - <p class='materia'>"+JSON.parse(data)[i][0]+"</p></p>";
-                            
-                                html +=  "<p class='seccion'> Sección  "+JSON.parse(data)[i][2]+"</p>";
-                            
-                            html +=  "<p class='profesor'> Profesor  <input type='text' value='"+JSON.parse(data)[i][1]+"'></p>";
-                            html +=  "<p class='aula'> Aula  <input type='text' value='"+JSON.parse(data)[i][3]+"'></p>";
-                            html +=  "<p class='dia'> Dia <input type='text' value='"+JSON.parse(data)[i][6]+"'></p>";
-                            html +=  "<p class='entrada'>Entrada  <input type='time' value='"+JSON.parse(data)[i][4]+"'></p>";
-                            html +=  "<p class='salida'>Salida  <input type='time' value='"+JSON.parse(data)[i][5]+"'></p>";
-                            html +=  "<p materia='"+JSON.parse(data)[i][7]+"' seccion='"+JSON.parse(data)[i][2]+"' class='icono-guardar' style='cursor:pointer;font-size:25px'></p>";
-                            html +=  "</div>  ";
+            html +=  "<div> Materia <p class='materia'>"+JSON.parse(data)[i][0]+"</p></div>";
+            html +=  "<div> Sección <p class='seccion'>"+JSON.parse(data)[i][2]+"</p></div>";
+            
+            html +=  "<p class='profesor'> Profesor  <input type='text' value='"+JSON.parse(data)[i][1]+"'></p>";
+            html +=  "<p class='aula'> Aula  <input type='text' value='"+JSON.parse(data)[i][3]+"'></p>";
+            html +=  "<p class='dia'> Dia <label>Lunes</label><input type='radio' name='dia' value='1'><label>Martes</label><input type='radio' name='dia' value='2'><label>Miércoles</label><input type='radio' name='dia' value='3'><label>Jueves</label><input type='radio' name='dia' value='4'><label>Viernes</label><input type='radio' name='dia' value='5'></p>";
+            html +=  "<p class='entrada'>Entrada  <input type='time' value='"+JSON.parse(data)[i][4]+"'></p>";
+            html +=  "<p class='salida'>Salida  <input type='time' value='"+JSON.parse(data)[i][5]+"'></p>";
+            html +=  "<p materia='"+JSON.parse(data)[i][7]+"' seccion='"+JSON.parse(data)[i][2]+"' class='icono-guardar' style='cursor:pointer;font-size:25px'></p>";
+            html +=  "</div>  ";
         }
         html += '<script src="../../js/modificar.js"></script>';
         $(".aularios").html(html);
     });
     })
-}
-
-function buscaradias(){
-    
-        $.post( "../../php/aulario/datos.php", { materiaadmi: $(this).val()})
-    .done(function( data ) {
-        
-    });
-    
 }
