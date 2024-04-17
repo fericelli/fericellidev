@@ -28,6 +28,7 @@ $(document).on("ready",function(e){
         
         if(validador==0){
             $.ajax({
+                
                 url:"php/iniciarsesion.php",
                 type: 'POST',
                 data: {usuario:$("#usuario").val().toLowerCase(),clave:$("#clave").val()},
