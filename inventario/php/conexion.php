@@ -7,7 +7,8 @@
 		private $Conectar;
 		
 		function __construct(){
-			$this->Conexiones("127.0.0.1:3306","u956446715_wilfredo","K$G355#Y4+k","u956446715_inventario");
+			//$this->Conexiones("localhost","root","Appserv2324**","inventario");
+			$this->Conexiones("localhost","u956446715_wilfredo","K$G355#Y4+k","u956446715_inventario");
 		}
 		private function Conexiones($S,$U,$C,$B){
 			$this->Servidor = $S;
