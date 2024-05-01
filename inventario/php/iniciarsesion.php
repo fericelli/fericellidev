@@ -1,4 +1,5 @@
 <?php
+error_reporting(-1);
     Class IniciarSesion{
 		private $Conexion;
         function __construct(){
