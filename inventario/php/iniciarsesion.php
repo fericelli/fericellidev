@@ -3,7 +3,7 @@ error_reporting(-1);
     Class IniciarSesion{
 		private $Conexion;
         function __construct(){
-			//include("conexion.php");
+			include("conexion.php");
 			//$this->Conexion = new Conexion();
 			echo $this->retorno();
 			//$this->Conexion->CerrarConexion();
