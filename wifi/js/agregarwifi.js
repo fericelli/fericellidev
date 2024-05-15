@@ -1,0 +1,14 @@
+$("button").on("click",function(){
+    if($("#nombre").val()==""){
+        $(".mensaje-error").eq(0).css("display","flex");
+    }
+    if($("#ippublica").val()==""){
+        $(".mensaje-error").eq(1).css("display","flex");
+    }
+    if($("#ipprivada").val()==""){
+        $(".mensaje-error").eq(2).css("display","flex");
+    }
+    setTimeout(function(){
+        $(".mensaje-error").css("display","none");
+    },2000)
+})
