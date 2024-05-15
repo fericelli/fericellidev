@@ -22,6 +22,7 @@ $(document).on("ready",function(){
     });
    
     
+    $(".item").eq(0).trigger("click");
    // setTimeout(function(){
         
     //},2000)
@@ -54,6 +55,5 @@ $(document).on("ready",function(){
             }
         }
     })
-    $(".item").eq(0).trigger("click");
 });
 
