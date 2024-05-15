@@ -1,5 +1,4 @@
-
-    
+setTimeout(function(){
     var html = "";
     estado = ["Bueno", "Intermedio", "Fallando"];
     
@@ -53,3 +52,6 @@
 
         $("#main-container").html(html);
     })
+},200)
+    
+    
