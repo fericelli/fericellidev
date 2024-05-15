@@ -1,5 +1,9 @@
 $(document).on("ready",function(e){
+
     e.preventDefault();
+    
+    console.log($(window).height());
+    $("body").css("height",$(window).height());
     $(".botons").on("click",function(){
         
         var validador = 0;
