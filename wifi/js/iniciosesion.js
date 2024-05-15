@@ -1,8 +1,7 @@
 $(document).on("ready",function(e){
 
     e.preventDefault();
-    
-    console.log($(window).height());
+    alert($(window).height());
     $("body").css("height",$(window).height());
     $(".botons").on("click",function(){
         
